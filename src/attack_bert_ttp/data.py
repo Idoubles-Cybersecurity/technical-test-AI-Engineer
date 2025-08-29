@@ -1,10 +1,12 @@
 from dataclasses import dataclass
 from typing import Dict
 
+
 @dataclass(frozen=True)
 class TTPEntry:
     id: str
     text: str
+
 
 def builtin_ttps() -> Dict[str, TTPEntry]:
     return {

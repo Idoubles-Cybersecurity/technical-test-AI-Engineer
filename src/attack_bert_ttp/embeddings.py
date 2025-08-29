@@ -2,11 +2,13 @@ from typing import List
 import torch
 import numpy as np
 
+
 class EmbeddingModel:
     """
     Loads a BERT-like model (preferably ATTACK/BERT) and produces sentence/paragraph embeddings.
     Implement: __init__, encode, _mean_pool, _setup_seed
     """
+
     def __init__(self, model_name: str, max_length: int = 384, seed: int = 42):
         self.model_name = model_name
         self.max_length = max_length

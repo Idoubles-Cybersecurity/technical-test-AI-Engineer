@@ -3,10 +3,12 @@ import numpy as np
 from .embeddings import EmbeddingModel
 from .data import builtin_ttps
 
+
 class TTPSimilarityClassifier:
     """
     Encodes a free-text paragraph and compares to known TTP embeddings via cosine similarity.
     """
+
     def __init__(self, embedder: EmbeddingModel):
         self.embedder = embedder
         self.ttps = builtin_ttps()
